@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "92a1a4fe-c06d-4336-9086-14f070044056",
+		"name": "ApiPrakt2025",
+		"description": "Цей API, розроблений на базі Symfony, надає набір RESTful ендпоінтів для виконання базових CRUD операцій над даними.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41855298"
+	},
+	"item": [
+		{
+			"name": "get users collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzg4NzIxNzYsImV4cCI6MTczODg3NTc3Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.GqTal-HA-JCkxPjS6PgvopLX-0gXEC3qlrN37-CiSrWQ1Vb4tdOXW90w2jjKR_PasN7_EWCnq0WyHU18Fu6OstZKO8_Stp5hefMYUYvTQnUK7xyhUQdcqVVgY_qqHgK2agKk_srSsL__idoaobtLhsg-918JrpktspqBT-4VLCH9b3u3hDRrXdbfHoy1g722CrI3zD2lNB2NupCArO4UzWAWETWd65SAPxiHxZXLUp0r2B83GzHgw8034_fKo0EjS9Y9-j2i4JJfZrAmMtlguWeyoyI6fhd0oVfBbgY2m5EjF0YRnzWUmjwrxAuyvRVaMvuleDXNfC-qvNtp8AI8dg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/v1/users",
+				"description": "Отримує список усіх користувачів, що збережені в системі. Цей запит повертає масив об’єктів, де кожен об’єкт містить id, email та name користувача."
+			},
+			"response": [
+				{
+					"name": "get users collection",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/v1/users"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Feb 2025 20:41:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Debug-Token",
+							"value": "8005ab"
+						},
+						{
+							"key": "X-Debug-Token-Link",
+							"value": "http://localhost:8000/_profiler/8005ab"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"Vlad\"\n        },\n        {\n            \"id\": \"2\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"John2\"\n        },\n        {\n            \"id\": \"3\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"John3\"\n        },\n        {\n            \"id\": \"4\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"John4\"\n        },\n        {\n            \"id\": \"5\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"John5\"\n        },\n        {\n            \"id\": \"6\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"John6\"\n        },\n        {\n            \"id\": \"7\",\n            \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n            \"name\": \"John7\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzg4NzIxNzYsImV4cCI6MTczODg3NTc3Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.GqTal-HA-JCkxPjS6PgvopLX-0gXEC3qlrN37-CiSrWQ1Vb4tdOXW90w2jjKR_PasN7_EWCnq0WyHU18Fu6OstZKO8_Stp5hefMYUYvTQnUK7xyhUQdcqVVgY_qqHgK2agKk_srSsL__idoaobtLhsg-918JrpktspqBT-4VLCH9b3u3hDRrXdbfHoy1g722CrI3zD2lNB2NupCArO4UzWAWETWd65SAPxiHxZXLUp0r2B83GzHgw8034_fKo0EjS9Y9-j2i4JJfZrAmMtlguWeyoyI6fhd0oVfBbgY2m5EjF0YRnzWUmjwrxAuyvRVaMvuleDXNfC-qvNtp8AI8dg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/v1/users/1",
+				"description": "Повертає детальну інформацію про користувача за його унікальним ідентифікатором `id`."
+			},
+			"response": [
+				{
+					"name": "get users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/v1/users/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Feb 2025 20:41:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Debug-Token",
+							"value": "97c1cd"
+						},
+						{
+							"key": "X-Debug-Token-Link",
+							"value": "http://localhost:8000/_profiler/97c1cd"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"1\",\n        \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n        \"name\": \"Vlad\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/login_check",
+				"description": "Для доступу до захищених ендпоінтів використовується авторизація. Після успішної автентифікації клієнту видається токен JWT, який необхідно використати для авторизації. Час дії токена 1 година."
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/login_check"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Feb 2025 20:41:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Debug-Token",
+							"value": "d6bacc"
+						},
+						{
+							"key": "X-Debug-Token-Link",
+							"value": "http://localhost:8000/_profiler/d6bacc"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzg4NzQ1MTAsImV4cCI6MTczODg3ODExMCwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.sLsbVpxqqVkLkJHAtG_xlbjBAzQUvVoVE9Af_lwzQWjTBZeGHX1MLxgDzSLvN8oJfiODM3OVPhyA5s43V6zF22vCm-2jHDNXqumVFFCX6IoijtVX9Rtxmmqq21YX6mijKfoHrUVZtgwukzWmr9lMTz__aSD8taBYlNxBg-IspCSC7_uC8CeSXyX4v6zRRoI3XNOmHUqH-1eXNvVZR6q1T65F2KJSeKmic22lDikvdqrncjdrRWLvVyXRLx3GpGQkAaI9dMXjd0B3ofOxAuUgHXGVTvI3yqveNQ7xSi4AJQKzylR_wKg77hzUiCE3U1PTqM-RWwpqbSA-0JFzmX2pBA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzg4NzIxNzYsImV4cCI6MTczODg3NTc3Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.GqTal-HA-JCkxPjS6PgvopLX-0gXEC3qlrN37-CiSrWQ1Vb4tdOXW90w2jjKR_PasN7_EWCnq0WyHU18Fu6OstZKO8_Stp5hefMYUYvTQnUK7xyhUQdcqVVgY_qqHgK2agKk_srSsL__idoaobtLhsg-918JrpktspqBT-4VLCH9b3u3hDRrXdbfHoy1g722CrI3zD2lNB2NupCArO4UzWAWETWd65SAPxiHxZXLUp0r2B83GzHgw8034_fKo0EjS9Y9-j2i4JJfZrAmMtlguWeyoyI6fhd0oVfBbgY2m5EjF0YRnzWUmjwrxAuyvRVaMvuleDXNfC-qvNtp8AI8dg"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Vlad\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/v1/users",
+				"description": "Створює нового користувача в системі. Запит приймає дані name та email в форматі JSON."
+			},
+			"response": [
+				{
+					"name": "create users",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Vlad\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/v1/users"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Feb 2025 20:42:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Debug-Token",
+							"value": "32a973"
+						},
+						{
+							"key": "X-Debug-Token-Link",
+							"value": "http://localhost:8000/_profiler/32a973"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sf_redirect=%7B%22token%22%3A%2232a973%22%2C%22route%22%3A%22app_create_users%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CTestController%22%2C%22method%22%3A%22createItem%22%2C%22file%22%3A%22D%3A%5C%5CProjects%5C%5CPhpStorm%5C%5CApiPrakt2025%5C%5Csrc%5C%5CController%5C%5CTestController.php%22%2C%22line%22%3A76%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 8,\n        \"name\": \"Vlad\",\n        \"email\": \"test@gmail.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzg4NzIxNzYsImV4cCI6MTczODg3NTc3Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.GqTal-HA-JCkxPjS6PgvopLX-0gXEC3qlrN37-CiSrWQ1Vb4tdOXW90w2jjKR_PasN7_EWCnq0WyHU18Fu6OstZKO8_Stp5hefMYUYvTQnUK7xyhUQdcqVVgY_qqHgK2agKk_srSsL__idoaobtLhsg-918JrpktspqBT-4VLCH9b3u3hDRrXdbfHoy1g722CrI3zD2lNB2NupCArO4UzWAWETWd65SAPxiHxZXLUp0r2B83GzHgw8034_fKo0EjS9Y9-j2i4JJfZrAmMtlguWeyoyI6fhd0oVfBbgY2m5EjF0YRnzWUmjwrxAuyvRVaMvuleDXNfC-qvNtp8AI8dg"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/v1/users/4",
+				"description": "Видаляє користувача з системи за унікальним id."
+			},
+			"response": [
+				{
+					"name": "delete users",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/v1/users/4"
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Feb 2025 20:42:21 GMT"
+						},
+						{
+							"key": "X-Debug-Token",
+							"value": "57f00c"
+						},
+						{
+							"key": "X-Debug-Token-Link",
+							"value": "http://localhost:8000/_profiler/57f00c"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sf_redirect=deleted; expires=Wed, 07 Feb 2024 20:42:21 GMT; Max-Age=0; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "update users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzg4NzIxNzYsImV4cCI6MTczODg3NTc3Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.GqTal-HA-JCkxPjS6PgvopLX-0gXEC3qlrN37-CiSrWQ1Vb4tdOXW90w2jjKR_PasN7_EWCnq0WyHU18Fu6OstZKO8_Stp5hefMYUYvTQnUK7xyhUQdcqVVgY_qqHgK2agKk_srSsL__idoaobtLhsg-918JrpktspqBT-4VLCH9b3u3hDRrXdbfHoy1g722CrI3zD2lNB2NupCArO4UzWAWETWd65SAPxiHxZXLUp0r2B83GzHgw8034_fKo0EjS9Y9-j2i4JJfZrAmMtlguWeyoyI6fhd0oVfBbgY2m5EjF0YRnzWUmjwrxAuyvRVaMvuleDXNfC-qvNtp8AI8dg"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Vlad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/v1/users/4",
+				"description": "Дозволяє частково оновити дані конкретного ресурсу. Запит приймає дані в форматі JSON, які містять лише ті поля, які необхідно змінити."
+			},
+			"response": [
+				{
+					"name": "update users",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Vlad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/v1/users/4"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.31"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Feb 2025 20:42:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Debug-Token",
+							"value": "e10eea"
+						},
+						{
+							"key": "X-Debug-Token-Link",
+							"value": "http://localhost:8000/_profiler/e10eea"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"4\",\n        \"email\": \"ipz234_kbb1@student.ztu.edu.ua\",\n        \"name\": \"Vlad\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
